@@ -11,7 +11,21 @@
 </head>
 
 <body>
-
+    <div class="container">
+        <form action="" autocomplete="on">
+            <input type="text" placeholder="Kiev, UA" />
+            <button class="btn_search">Search</button>
+        </form>
+        <div class="weather_wrap">
+            <menu>
+                <ul id="menu">
+                    <li data-menu="today">Today</li>
+                    <li data-menu="five_days">5-day forecast</li>
+                </ul>
+            </menu>
+            <iframe id="weather_iframe" name='main-frame' frameborder="0"></iframe>
+        </div>
+    </div>
 
     <script src="./script/script.js"></script>
 </body>

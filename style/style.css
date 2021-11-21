@@ -1,0 +1,116 @@
+/* MAIN CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: rgb(220, 242, 247);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form {
+    width: 100vw;
+    margin: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    width: 350px;
+    height: 30px;
+    padding: 5px;
+}
+
+button {
+    width: 100px;
+    height: 30px;
+    margin-left: 30px;
+}
+
+.weather_wrap {
+    border: 2px solid navy;
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+}
+
+#menu {
+    display: flex;
+}
+
+ul li {
+    list-style-type: none;
+    width: 50%;
+    text-align: center;
+    background-color: gainsboro;
+}
+
+.active {
+    background-color: gold;
+}
+
+/* TODAY CSS */
+iframe {
+    height: 80vh;
+}
+
+.weather_today,
+.weather_five_day {
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+}
+
+.weather_now {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.main_info {
+    border: 1px solid green;
+    height: 350px;
+    /* display: flex;
+    flex-direction: column; */
+}
+
+.more_info {
+    border: 1px solid green;
+}
+
+
+.weather_hourly {
+    border: 1px solid black;
+    height: 250px;
+    display: grid;
+    align-content: center;
+}
+
+.hour_info {
+    border: 1px solid navy;
+    width: 150px;
+    height: 200px;
+}
+
+/* 5-DAY CSS */
+
+.weather_days {
+    border: 1px solid red;
+    height: 350px;
+    display: grid;
+    align-content: center;
+}
+
+.days_info {
+    border: 1px solid navy;
+    width: 200px;
+    height: 300px;
+}
