@@ -63,7 +63,7 @@ iframe {
 }
 
 .weather_today,
-.weather_five_day {
+.weather_forecast {
     border: 1px solid red;
     display: flex;
     flex-direction: column;
@@ -91,10 +91,11 @@ iframe {
     border: 1px solid black;
     height: 250px;
     display: grid;
+    grid-template-columns: repeat(3, 1fr);
     align-content: center;
 }
 
-.hour_info {
+.hourly_info {
     border: 1px solid navy;
     width: 150px;
     height: 200px;
@@ -106,10 +107,11 @@ iframe {
     border: 1px solid red;
     height: 350px;
     display: grid;
+    grid-template-columns: repeat(3, 1fr);
     align-content: center;
 }
 
-.days_info {
+.weather_forecast_item {
     border: 1px solid navy;
     width: 200px;
     height: 300px;
