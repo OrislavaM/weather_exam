@@ -82,6 +82,10 @@ iframe {
     flex-direction: column; */
 }
 
+.condition_now {
+    text-transform: capitalize;
+}
+
 .more_info {
     border: 1px solid green;
 }
