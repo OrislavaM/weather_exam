@@ -88,6 +88,7 @@ iframe {
 
 .more_info {
     border: 1px solid green;
+    width: 150px;
 }
 
 
@@ -111,12 +112,16 @@ iframe {
     border: 1px solid red;
     height: 350px;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     align-content: center;
 }
 
 .weather_forecast_item {
     border: 1px solid navy;
-    width: 200px;
+    width: 150px;
     height: 300px;
+}
+
+.forecast_description {
+    text-transform: capitalize;
 }

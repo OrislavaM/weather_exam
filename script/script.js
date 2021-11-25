@@ -5,7 +5,7 @@ const currentTemp = document.getElementById("current_temp");
 const currentDesc = document.getElementById("current_description");
 const moreInfo = document.getElementById("more_info");
 const weatherHourly = document.getElementById("weather_hourly");
-const weatherDays = document.getElementById("weather_days");
+// const weatherDays = document.getElementById("weather_days");
 
 // Updating the Date and Time value
 const days = [
@@ -44,7 +44,11 @@ setInterval(() => {
     const ampm = hour > 12 ? "PM" : "AM";
 
     timeNow.innerHTML =
-        hours12Format + ":" + minutes + " " + `<span id="am_pm">${ampm}</span>`;
+        (hours12Format < 10 ? "0" + hours12Format : hours12Format) +
+        ":" +
+        (minutes < 10 ? "0" + minutes : minutes) +
+        " " +
+        `<span id="am_pm">${ampm}</span>`;
 
     dateNow.innerHTML =
         days[day] + ", " + date + " " + months[month] + ", " + year;
@@ -68,6 +72,8 @@ function getWeatherData() {
     });
 }
 
+// Displaying the current weather
+
 function showTempData(data) {
     let {
         temp,
@@ -80,6 +86,8 @@ function showTempData(data) {
         visibility,
         weather,
     } = data.current;
+
+    city.innerHTML = data.timezone;
 
     currentTemp.innerHTML = `                  
         <div class="temp_now">
